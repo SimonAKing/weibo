@@ -16,7 +16,7 @@ const getIssues = vars => {
   const ql = `
   query getIssues($owner: String!, $repo: String!) {
     repository(owner: $owner, name: $repo) {
-      issues(first: 1, orderBy: {field: CREATED_AT, direction: DESC}, 
+      issues(first: 1, orderBy: {field: CREATED_AT, direction: DESC},
         filterBy: {createdBy: $owner, states: OPEN}) {
         nodes {
           body
@@ -30,7 +30,7 @@ const getIssues = vars => {
 
 const filterIssue = body => {
   const header = ``
-  const footer = `\r\n\r\n微博地址: https://tomotoes.com/blog/weibo`
+  const footer = `\r\n\r\n微博地址: https://simonaking.com/blog/weibo`
   return header + body + footer
 }
 
@@ -42,4 +42,3 @@ module.exports = () => {
     return filterIssue(issue)
   })
 }
-

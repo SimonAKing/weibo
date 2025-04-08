@@ -11,9 +11,9 @@ const Gist = axios.create({
 
 module.exports = issue => {
   Gist.patch(gistID, {
-    description: '✨ Latest Weibo',
+    description: '✨ Latest Thoughts',
     files: {
-      'Weibo.md': {
+      'Thoughts.md': {
         content: issue
       }
     }
