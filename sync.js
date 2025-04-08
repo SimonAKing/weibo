@@ -6,7 +6,6 @@ const twitter = require('./platform/twitter')
 const sync = () => {
   getIssue().then(issue => {
     telegram(issue)
-    gist(issue)
   })
 }
 
