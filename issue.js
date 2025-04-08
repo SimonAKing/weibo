@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const owner = 'Tomotoes'
+const owner = 'SimonAKing'
 const repo = 'weibo'
 const { ISSUE_TOKEN } = process.env
 
