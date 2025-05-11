@@ -27,8 +27,8 @@ jobs:
 
     - name: Sync Weibo
       env:
-        GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+        GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        ISSUE_TOKEN: ${{ secrets.ISSUE_TOKEN }}
+        GIST_SHORT_IDS_STR: ${{ secrets.GIST_SHORT_IDS_STR }}
       run: |
-        cross-env GIST_TOKEN=$GIST_TOKEN BOT_TOKEN=$BOT_TOKEN ISSUE_TOKEN=$ISSUE_TOKEN node sync.js
+        cross-env GITHUB_PAT=$GITHUB_PAT BOT_TOKEN=$BOT_TOKEN GIST_SHORT_IDS_STR=$GIST_SHORT_IDS_STR node sync.js
