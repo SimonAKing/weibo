@@ -3,7 +3,7 @@ const Slimbot = require("slimbot");
 const isImageUrl = require("is-image-url");
 
 const GIST_SHORT_IDS = process.env.GIST_SHORT_IDS_STR.split(",");
-const GITHUB_PAT = process.env.GITHUB_PAT;
+const GITHUB_PAT = process.env.GIST_PAT;
 const BOT_TOKEN = process.env.BOT_TOKEN;
 
 const TELEGRAM_CHAT_ID = -1001249449971;
