@@ -122,7 +122,7 @@ async function updateGistContent(gistId, content, description) {
 
 function formatIssueContent(issue) {
   const labelsText =
-    issue.labels.length > 0 ? `Labels: ${issue.labels.join(", ")}\n` : "";
+    issue.labels.length > 0 ? `Labels: ${issue.labels.join(", ")}\n\n` : "";
 
   return `${issue.body}
 
