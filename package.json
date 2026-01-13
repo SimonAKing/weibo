@@ -10,7 +10,7 @@
   "author": "SimonMa",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cross-env": "^7.0.0",
     "is-image-url": "^1.1.8",
     "slimbot": "^4.6.0"
